@@ -3,238 +3,257 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deanun van Thanda Portfolio</title> 
-    <!-- <link rel="stylesheet" href="./assets/fonts/stylesheet.css"> -->
+    <title>Deanun van Thanda Portfolio</title>
     <link rel="stylesheet" href="./Css/Style.css">
-    <link
-    <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
-    rel="stylesheet"
-/>
+    <link 
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" 
+        rel="stylesheet"
+    />
 </head>
 <body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <h1 class="logo"><span>Van</span> Thanda<span>.</span></h1>
+        <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="ri-close-fill" onclick="closemenu()"></i>
+        </ul>
+        <i class="ri-menu-line" onclick="openmenu()"></i>
+    </nav>
+    
+
+    <!-- Header Section -->
     <div id="header">
         <div class="container">
-            <nav>
-                <h1 class="logo"><span>Van</span> Thanda<span>.</span></h1>
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio ">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="ri-close-fill" onclick="closemenu()"></i>
-                </ul>
-                <i class="ri-menu-line" onclick="openmenu( )"></i>
-            </nav>
-
-            <div class="flexed">
-    
-                <div class="all">
-                    <h4 class="hello">HELLO!</h4>
-                    <h1 class="deanunvan">I'm <br> DEANUNVAN <span>THANDA.</span></h1>
+            <div class="all">
+                <div class="image-container">
+                    <img class="profile" src="./assets/Images/about.png" alt="Profile Picture">
+                </div>
+                <div class="overlay">
+                    <h1>I'm</h1>
+                    <h1 class="deanunvan">DEANUNVAN <span>THANDA</span></h1>
+                    <h4 class="developer">
+                        <em>I am a Developer</em>
+                    </h4>
                     <div class="social-icons">
-                        <a href="https://github.com/"><i class="ri-github-fill"></i></i></a>
+                        <a href="https://github.com/"><i class="ri-github-fill"></i></a>
                         <a href="https://linkedin.com/"><i class="ri-linkedin-box-fill"></i></a>
                         <a href="https://whatsapp.com/"><i class="ri-whatsapp-fill"></i></a>
                     </div>
-                    <h4 class="developer"><em>I am a Developer, <span>UX/UI Designer!!</span></em></h4>
+
                 </div>
-
             </div>
-
+        </div>
     </div>
 
-<!-- ---------------------------about-------------------------------------- -->
-
-<div id="about">
-    <div class="conatiner">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="./assets/Images/about me.png" alt="">
-            </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
-                <p>Hi there! I'm a web developer skilled in HTML, CSS, and JavaScript. I also design with Figma and CorelDraw and have a bit of digital marketing experience. I love teaching kids to code with Scratch and am always eager to learn and grow. Let's create something amazing!</p>
-
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./assets/Images/profile2.png" alt="About Me">
                 </div>
-                <div class="tab-contents active-tab" id="skills">
-                    <ul>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Hi there! I'm a web developer skilled in HTML, CSS, and JavaScript. 
+                        I also design with Figma and CorelDraw and have a bit of digital 
+                        marketing experience. I love teaching kids to code with Scratch 
+                        and am always eager to learn and grow. Let's create something amazing!
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
                         <section id="skills">
-                            <h6 class="skills-head">HTML  80%</h6>
+                            <h6 class="skills-head">HTML 80%</h6>
                             <div class="html"><div class="percent1"></div></div>
-                    
                             <h6 class="skills-head">CSS 77%</h6>
                             <div class="html"><div class="percent2"></div></div>
-                    
-                            <h6 class="skills-head">JavaScript  10%</h6>
+                            <h6 class="skills-head">JavaScript 10%</h6>
                             <div class="html"><div class="percent6"></div></div>
-                    
-                            <h6 class="skills-head">Web Designing  75%</h6>
+                            <h6 class="skills-head">Web Designing 75%</h6>
                             <div class="html"><div class="percent3"></div></div>
-                    
-                            <h6 class="skills-head">Mobile Application Designing  65%</h6>
+                            <h6 class="skills-head">Mobile Application Designing 65%</h6>
                             <div class="html"><div class="percent4"></div></div>
-                    
-                            <h6 class="skills-head">Graphic Designing  70%</h6>
+                            <h6 class="skills-head">Graphic Designing 70%</h6>
                             <div class="html"><div class="percent5"></div></div>
                         </section>
-                    </ul>
-                </div>
-
-                <div class="tab-contents" id="experience">
-                    <ul>
-                        <li><span>2024</span><br>UX/UX Design with figma and corelDraw</li>
-                        <li><span>2024</span><br>html,Css and JS, Responsive Web Development </li>
-                        <li><span>2024</span><br>Digital marketing</li>
-                    </ul>
-                </div>
-
-                <div class="tab-contents" id="education">
-                    <ul>
-                        <li><span>2024</span><br>UX/UX Design Training at Uncommon.org</li>
-                        <li><span>2024</span><br>Currently doing Responsive Web Development at Uncommon.org with html, css and JavaScript</li>
-                        <li><span>2024</span><br>Digital marketing  at Uncommon.org</li>
-                    </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024</span><br>UX/UX Design with Figma and CorelDraw</li>
+                            <li><span>2024</span><br>HTML, CSS, and JS Responsive Web Development</li>
+                            <li><span>2024</span><br>Digital Marketing</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024</span><br>UX/UX Design Training at Uncommon.org</li>
+                            <li><span>2024</span><br>Currently doing Responsive Web Development at Uncommon.org</li>
+                            <li><span>2024</span><br>Digital Marketing at Uncommon.org</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-<!-- --------------------------------services---------------------------------------- -->
-
-<div id="services">
-    <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
-            <div>
-                <i class="ri-code-s-slash-line"></i>
-                <h2>Responsive Web Dev</h2>
-                <p>I build websites that look great on any device. From phones to desktops, my designs ensure a smooth and enjoyable user experience.</p>
+    <!-- Services Section -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="ri-code-s-slash-line"></i>
+                    <h2>Responsive Web Dev</h2>
+                    <p>I build websites that look great on any device.</p>
+                </div>
+                <div>
+                    <i class="ri-crop-line"></i>
+                    <h2>UX/UI Design</h2>
+                    <p>I create user-friendly and visually appealing designs.</p>
+                </div>
+                <div>
+                    <i class="ri-app-store-fill"></i>
+                    <h2>App Design</h2>
+                    <p>Intuitive app designs using Figma and CorelDraw.</p>
+                </div>
             </div>
-
-            <div>
-                <i class="ri-crop-line"></i>
-                <h2>UX/UI Design</h2>
-                <p>I create user-friendly and visually appealing designs. My goal is to make sure that users have a great experience, whether they're browsing a website or using an app.</p>                        
-            </div>
-
-            <div>
-                <i class="ri-app-store-fill"></i>
-                <h2>App Design</h2>
-                <p>I design intuitive and engaging apps. Using tools like Figma and CorelDraw, I ensure every app is easy to use and looks fantastic, providing a seamless experience for users.</p>
-            </div>
-        </div>
-
-        <div class="services-list">
-            <div>
-                <i class="ri-bear-smile-fill"></i>
-                <h2>Scratch</h2>
-                <p>I enjoy teaching kids how to code with Scratch. It's a fun and interactive way to introduce them to programming and help them build their own projects while sparking their creativity and interest in technology.</p>
-                <a href="Gallery.html">View Gallery</a>
-            </div>
-
-            <div>
-                <i class="ri-shake-hands-fill"></i>
-                <h2>Digital Marketing</h2>
-                <p>I have basic knowledge of digital marketing, helping to promote websites and apps effectively. I use strategies that increase online visibility and engage audiences, ensuring our projects reach and resonate with the right people.</p>
-            </div>
-
-            <div>
-                <i class="ri-tools-fill"></i>
-                <h2>Tools</h2>
-                     <a href="tools.html"><i class="ri-external-link-fill"></i></a>
+            <div class="services-list">
+                <div>
+                    <i class="ri-bear-smile-fill"></i>
+                    <h2>Scratch</h2>
+                    <p>Teaching kids coding with Scratch.</p>
+                    <a href="Gallery.html">View Gallery</a>
+                </div>
+                <div>
+                    <i class="ri-shake-hands-fill"></i>
+                    <h2>Digital Marketing</h2>
+                    <p>Basic strategies for boosting online visibility.</p>
+                </div>
+                <div>
+                    <i class="ri-tools-fill"></i>
+                    <h2>Tools</h2>
+                    <a href="tools.html"><i class="ri-external-link-fill"></i></a>
+                </div>
             </div>
         </div>
     </div>
-</div>
-</div>
 
-
-<!-- -------------------------------portfolio------------------------------- -->
-
-<div id="portfolio">
-    <div class="container"></div>
-    <h1 class="sub-title">My Work</h1>
-    <div class="work-list">
-        <div class="work">
-            <img src="./Assets/Images/q.jpg" alt="">
-            <div class="layer">
-                <h3>VIEW THE PROJECT</h3>
-                <a href="#"><i class="ri-external-link-fill"></i></a>
+    <!-- Portfolio Section -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./Assets/Images/q.jpg" alt="">
+                    <div class="layer">
+                        <h3>VIEW THE PROJECT</h3>
+                        <a href="#"><i class="ri-external-link-fill"></i></a>
+                    </div>
+                    <div class="layer-1">
+                        <h3>TIGZOZO</h3>
+                        <p>Responsive website with a dark theme option.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./Assets/Images/w.jpg" alt="">
+                    <div class="layer">
+                        <h3>VIEW THE PROJECT</h3>
+                        <a href="https://github.com/deanunvan/Zim-E-passports-Project.git"><i class="ri-external-link-fill"></i></a>
+                    </div>
+                    <div class="layer-1">
+                        <h3>Zim E-Passports</h3>
+                        <p>Apply for passports online from home.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./Assets/Images/e.jpg" alt="">
+                    <div class="layer">
+                        <h3>VIEW THE DESIGNS</h3>
+                        <a href="#"><i class="ri-external-link-fill"></i></a>
+                    </div>
+                    <div class="layer-1">
+                        <h3>DESIGN PROJECTS</h3>
+                        <p>Web, app, and graphic design projects.</p>
+                    </div>
+                </div>
             </div>
-
-            <div class="layer-1">
-                <h3>TIGZOZO</h3>
-                <p>A responsive website with an option of dark theme.</p>
-            </div>
-        </div>
-        <div class="work">
-            <img src="./Assets/Images/w.jpg" alt="">
-            <div class="layer">
-                <h3>VIEW THE PROJECT</h3>
-                <a href="https://github.com/deanunvan/Zim-E-passports-Project.git"><i class="ri-external-link-fill"></i></a>
-            </div>
-
-            <div class="layer-1">
-                <h3>Zim E-Passports</h3>
-                <p>A website where you can apply a passport online in the camfort of your home.</p>
-            </div>
-        </div>
-        <div class="work">
-            <img src="./Assets/Images/e.jpg" alt="">
-            <div class="layer">
-                <h3>VIEW THE DESIGNS</h3>
-                <a href="#"><i class="ri-external-link-fill"></i></a>
-            </div>
-
-            <div class="layer-1">
-                <h3>DESIGN PROJECTS</h3>
-                <p>Here you will find all the designed projects including the Web Designs, App Designs and Graphic Designs.</p>
-            </div>
+            <a href="https://github.com/deanunvan" class="btn">See more</a>
         </div>
     </div>
-    <a href="https://github.com/deanunvan" class="btn">See more</a>
-</div>
 
+
+    <!-- Contact Section -->
+     <div id="contact">
+        <div class="container">
+            <h1 class="sub-title">Contact Me</h1>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Massege"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+                <a href="./assets/images/Male Persona [ Deanunvan ].pdf" download class="btn btn2">Download CV</a>
+            </div>
+        </div>
+     </div>
+
+    <!-- Footer -->
     <div class="copyright">
         <p>Deanunvan Thanda.<i class="ri-heart-fill"></i> Portfolio Website</p>
     </div>
-</div>
 
-
-
-
-        <script>
-
+    <!-- Scripts -->
+    <script>
         var sidemenu = document.getElementById("sidemenu");
-
-        function openmenu(){
+        function openmenu() {
             sidemenu.style.right = "0";
         }
-        function closemenu(){
+        function closemenu() {
             sidemenu.style.right = "-200px";
+        }
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
         }
     </script>
 
 <script>
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab")
-    }
-</script>
-    
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbykupfvCzm0q6flpu2NmJ5okSUlCYn32uWB04QQWkJuLMRDaJuw4Vfe53nAGgpKNOdc/exec'
+    const form = document.forms['submit-to-google-sheet']
+     const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
 </body>
 </html>

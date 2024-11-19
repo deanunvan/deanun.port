@@ -9,10 +9,8 @@
 }
 
 body{
-    background-image: url(../assets/Images/istockphoto-1418476287-170667a.webp);
-    background-position: center;
-    background-size: cover;
-    color: rgb(0, 0, 0);
+    background: #1a1a1a;
+    color: rgb(255, 255, 255);
 }
 
 html{
@@ -21,9 +19,6 @@ html{
 
 #header{
     width: 100%;
-    height: 100vh;
-    background:#ffffff77;
-    backdrop-filter: blur(30px);
 }
 
 .container{
@@ -36,7 +31,12 @@ nav{
     justify-content: space-between;
     flex-wrap: wrap;
     border: none;
-    border-bottom: 1px solid rgb(177, 142, 66);
+    padding: 20px 3%;
+    background: #1a1a1a;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    transition: background 0.3s, box-shadow 0.3s;
 }
 
 .logo{
@@ -44,7 +44,7 @@ nav{
 }
 
 span{
-    color: rgb(177, 142, 66);
+    color: rgb(255, 210, 114);
 }
 
 nav ul li{
@@ -54,7 +54,7 @@ nav ul li{
 }
 
 nav ul li a{
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
     font-size: 18px;
     position: relative;
@@ -65,7 +65,7 @@ nav ul li a::after{
     width: 0;
     height: 20px;
     border-radius: 10%;
-    background: rgba(177, 142, 66, 0.445);
+    background: rgba(255, 205, 98, 0.445);
     position: absolute;
     left: 0;
     transition: 1s;
@@ -75,69 +75,93 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width: 100%;
     height: 102%;
+
 }
+
+
 
 @keyframes move {
     0% {
-        transform: translateX(0);
+        transform: translateY(0);
     }
     50% {
-        transform: translateX(10px);
+        transform: translateY(2px);
     }
     100% {
-        transform: translateX(0);
+        transform: translateY(0);
     }
 }
 
-.hello {
-    margin-top: 100px;
+#header {
+    position: relative;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container {
+    position: relative;
+    z-index: 1;
+}
+
+.profile {
+    width: 350px;
+    height: 400px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%; /* Centered overlay */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 2;
+    margin-top: 130px;
 }
 
 .deanunvan {
     font-weight: bolder;
     font-size: 50px;
-    animation: move 10s infinite;
+    margin: 10px 0;
+    color: rgb(255, 255, 255);
 }
 
 .developer {
     margin-top: 10px;
 }
 
-.all{
-    align-items: center;
+.social-icons {
+    margin-top: 20px;
 }
 
-
-.social-icons{
-    margin-top: 10px;
-    animation: move 10s infinite;
-}
-
-.social-icons a{
+.social-icons a {
     text-decoration: none;
-    font-size: 70px;
+    font-size: 30px;
     margin-right: 15px;
     color: rgb(177, 142, 66);
     display: inline-block;
-    transition: tranform 2s;
+    transition: transform 0.2s ease-in-out;
 }
 
-.social-icons a:hover{
+.social-icons a:hover {
     color: rgb(177, 142, 66);
-    transform: scale(1.05);
-    transition: 3s;
+    transform: scale(1.1);
 }
 
-.home-picture img{
-    filter: drop-shadow(1px 1px 20px rgb(255, 255, 69));
-}
+
+
 
 
 /* --------about-------- */
 
 #about{
     padding: 80px;
-    color: #888888;
+    color: #ffffff;
 }
 
 .row{
@@ -154,7 +178,7 @@ nav ul li a:hover::after{
 .about-col-1 img{
     width: 100%;
     border: none;
-    border-bottom: 1px solid rgb(177, 142, 66);
+    height: 400px;
     filter: drop-shadow(1px 1px 20px rgb(255, 255, 69));
 }
 
@@ -163,13 +187,13 @@ nav ul li a:hover::after{
 }
 
 .about-col-2 p{
-    color: black ;
+    color: rgb(255, 255, 255) ;
 }
 
 .sub-title{
     font-size: 40px;
     font-weight: 300;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     margin-bottom: 20px;
     animation: move 10s infinite;
 }
@@ -238,7 +262,7 @@ nav ul li a:hover::after{
 }
 
 .skills-head{
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     margin-top: 25px;
 }
 
@@ -317,7 +341,7 @@ nav ul li a:hover::after{
 
 .sub-title a{
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
     font-weight: bolder;
 }
 
@@ -474,7 +498,7 @@ nav ul li a:hover::after{
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
     transition: background 0.5s;
     overflow: hidden;
     position: relative;
