@@ -752,3 +752,17 @@ nav .ri-menu-line{
     margin-top: -40px;
     display: block;
 }
+
+.gallery-btn{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background: rgb(255, 207, 105);
+    color: #000000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.5s;
+    border: solid 1px white;
+}
