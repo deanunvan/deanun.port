@@ -130,6 +130,7 @@ nav ul li a:hover::after{
     color: white;
     z-index: 2;
     margin-top: 130px;
+    overflow: hidden;
 }
 
 .deanunvan {
@@ -138,6 +139,8 @@ nav ul li a:hover::after{
     margin: 10px 0;
     color: rgb(255, 255, 255);
 }
+
+
 
 .developer {
     margin-top: 10px;
@@ -539,26 +542,13 @@ nav ul li a:hover::after{
 
 /* ----------contact---------- */
 
-.contact-left{
-    flex-wrap: 35%;
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-}
+
 
 .contact-right{
     flex-wrap: 60%;
+    overflow: hidden;
 }
 
-.contact-left p{
-    margin-top: 30px;
-}
-
-.contact-left p i{
-    color: rgb(177, 142, 66);
-    margin-right: 15px;
-    font-size: 25px;
-}
 
 .social-iconss{
     margin-top: 30px;
@@ -587,6 +577,7 @@ nav ul li a:hover::after{
 
 .contact-right form{
     width: 100%;
+
 }
 
 form input, form textarea{
@@ -1342,3 +1333,23 @@ nav .ri-menu-line{
     transition: background 0.5s;
     border: solid 1px white;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
