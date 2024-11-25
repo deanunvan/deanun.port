@@ -357,20 +357,24 @@ nav ul li a:hover::after{
     transition: transform 0.3s ease; /* Optional for a smooth start/stop */
 }
 
-/* Apply rotation on hover */
+/* Apply flipping on hover */
 .services-list div:hover i {
-    animation: rotate 1s linear infinite; /* Spin the icons */
+    animation: flip 5s linear; /* Flip the icons for 5 seconds */
 }
 
-/* Define the rotation animation */
-@keyframes rotate {
-    from {
-        transform: rotate(0deg); /* Start at 0 degrees */
+/* Define the flip animation */
+@keyframes flip {
+    0% {
+        transform: rotateY(0deg); /* Start at 0 degrees */
     }
-    to {
-        transform: rotate(360deg); /* Complete one full rotation */
+    50% {
+        transform: rotateY(180deg); /* Halfway through the flip */
+    }
+    100% {
+        transform: rotateY(360deg); /* Complete one full flip */
     }
 }
+
 
 
 
