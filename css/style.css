@@ -148,6 +148,8 @@ nav ul li a:hover::after{
 
 .social-icons {
     margin-top: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 .social-icons a {
@@ -157,6 +159,7 @@ nav ul li a:hover::after{
     color: rgb(177, 142, 66);
     display: inline-block;
     transition: transform 0.2s ease-in-out;
+
 }
 
 .social-icons a:hover {
